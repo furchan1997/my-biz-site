@@ -1,0 +1,22 @@
+{
+  "name": "my-biz-site",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-hash-link": "^1.0.2",
+    "react-router-dom": "^6.0.0",
+    "react-router-hash-link": "^2.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^5.4.19"
+  }
+}
