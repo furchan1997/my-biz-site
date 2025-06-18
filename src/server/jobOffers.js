@@ -27,9 +27,14 @@ async function deleteOffer(ID) {
   return httpService.delete(`/api/offers/admin/${ID}`);
 }
 
+async function createOffer(offer) {
+  return httpService.post("/api/offers/", offer);
+}
+
 export const jobOfferService = {
   getJobOffer,
   signIn,
   logout,
   deleteOffer,
+  createOffer,
 };

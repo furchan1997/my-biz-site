@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
 import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -10,6 +9,7 @@ import MyOffers from "./pages/MyOffers";
 
 import SignIn from "./pages/admin/signin";
 import ClientOffers from "./pages/admin/ClientOffers";
+import CreateOffer from "./pages/CreateOffer";
 
 function PublicSite() {
   return (
@@ -18,7 +18,7 @@ function PublicSite() {
         <Navbar />
       </header>
       <main
-        style={{ marginTop: "70px", marginBottom: "130px" }}
+        style={{ marginTop: "90px", marginBottom: "130px" }}
         className="d-flex flex-column justify-content-center align-items-center text-center w-75 mx-auto"
       >
         <Hero />
@@ -26,6 +26,7 @@ function PublicSite() {
         <Services />
         <Portfolio />
         <MyOffers />
+        <CreateOffer />
       </main>
       <footer>
         <Footer />

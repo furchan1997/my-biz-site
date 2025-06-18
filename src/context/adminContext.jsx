@@ -48,6 +48,17 @@ export function AdminProvider({ children }) {
     }
   };
 
+  const createOffer = async (offer) => {
+    setError(null);
+    try {
+      const response = await jobOfferService.createOffer(offer);
+      setOffers(response.data.data);
+    } catch (err) {
+      setError(err?.response || err?.response?.data);
+      console.log(err);
+    }
+  };
+
   return (
     <AdminContext.Provider
       value={{
@@ -59,6 +70,7 @@ export function AdminProvider({ children }) {
         getJobOffers,
         offers,
         delateOffer,
+        createOffer,
       }}
     >
       {children}

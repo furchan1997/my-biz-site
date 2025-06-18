@@ -1,11 +1,13 @@
 import React from "react";
+import Logo from "../components/Logo";
 
 function Hero() {
   return (
     <div id="hero">
-      <h1 className="text-primary fw-bold">היי, אני אריאל בן אור 👋</h1>
+      <Logo fontSize={"1"} />
       <h2 className="text-secondary">
-        מפתח אתרים ואפליקציות שעוזר לעסקים לבלוט ברשת
+        היי, אני אריאל בן אור 👋
+        <br /> מפתח אתרים ואפליקציות שעוזר לעסקים לבלוט ברשת
       </h2>
       <p className="text-muted">
         בונה אתרים מרשימים, מהירים ורספונסיביים שמביאים לקוחות.

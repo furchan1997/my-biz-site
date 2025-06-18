@@ -1,3 +1,6 @@
+import { HashLink } from "react-router-hash-link";
+import Logo from "./Logo";
+
 function Footer() {
   return (
     <div className="fixed-bottom bg-primary d-flex justify-content-between align-items-center px-2 ">
@@ -22,7 +25,9 @@ function Footer() {
         </a>
       </div>
       <div>
-        <h1 className="navbar-brand fw-bold text-orange fs-5">FURCHAN</h1>
+        <HashLink to="/#hero" smooth>
+          <Logo fontSize={"5"} />
+        </HashLink>
       </div>
     </div>
   );

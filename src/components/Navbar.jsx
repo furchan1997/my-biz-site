@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Logo from "./Logo";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-primary shadow-sm px-4 fixed-top">
-      <NavLink className="navbar-brand fw-bold text-orange" to="/">
-        FURCHAN
-      </NavLink>
+      <HashLink smooth to="/#hero" className="">
+        <Logo fontSize={"3"} />
+      </HashLink>
       <button
         className="navbar-toggler"
         type="button"
@@ -47,18 +48,11 @@ function Navbar() {
         </ul>
 
         <div className="d-flex">
-          <button
-            className="btn text-muted me-2 bg-orang hover-bg-primary"
-            onClick={() => goTo("/bmi-calc")}
-          >
-            צור/י קשר
-          </button>
-          <button
-            className="btn text-muted me-2 bg-orang hover-bg-primary"
-            onClick={() => goTo("/bmr-calc")}
-          >
-            קבל/י הצעת מחיר
-          </button>
+          <HashLink smooth to={"/#form"}>
+            <button className="btn text-muted me-2 bg-orang hover-bg-primary">
+              קבל/י הצעת מחיר
+            </button>
+          </HashLink>
         </div>
       </div>
     </nav>
